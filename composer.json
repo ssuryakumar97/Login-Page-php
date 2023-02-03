@@ -1,0 +1,7 @@
+{
+    "require": {
+        "predis/predis": "^2.1",
+        "soyuka/stubs-mongodb": "^1.0",
+        "mongodb/mongodb": "^1.12"
+    }
+}
