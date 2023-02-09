@@ -6,7 +6,7 @@ Header('Access-Control-Allow-Origin: *'); //for allow any domain, insecure
 Header('Access-Control-Allow-Headers: *'); //for allow any headers, insecure
 Header('Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE'); //method allowed
 
-require '../vendor/autoload.php';
+require '../assets/autoload.php';
 
 $myObj = new stdClass();
 
@@ -35,16 +35,16 @@ $myObj->lastName= $res['lastName'];
 
 
 $db = $mongodb->dbusers;
-   $myObj->database = "Database dbusers selected";
-   
-   $collection = $db->phpusers;
+$myObj->database = "Database dbusers selected";
+
+$collection = $db->phpusers;
    $myObj->collection = "Collection selected succsessfully";
    
 
    $document = array( 
-    "firstName" => $res['firstName'], 
-    "lastName" => $res['lastName'], 
-    "email" => $email,
+   "firstName" => $res['firstName'], 
+   "lastName" => $res['lastName'], 
+   "email" => $email,
     "designation" => $designation,
     "dateofbirth" => $dateofbirth,
     "contact" => $contact
